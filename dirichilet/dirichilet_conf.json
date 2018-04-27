@@ -1,0 +1,21 @@
+{
+	"function_id"	: "clustering_bottom_up",
+	"run_flag"		: 0,
+	
+	"general"		:	{
+		"directory"		: ""
+	},
+	
+	"clustering_bottom_up"	: {
+		"samples_files"	: [ "Y:/Anomalies/umn/temporal/features/Auto_Recu_15_test.ft"],
+		"algorithms"	: ["kde"],
+		"kde"			: {
+			"max_iter"	: 100, 
+			"prob_th"	: 0.01,
+			"bandwidth" : 0.7
+		}
+	},
+	"tsne": {
+		"samples_files"	: [ "Y:/Anomalies/umn/temporal/features/Auto_Recu_15.ft"]
+	}
+} 
